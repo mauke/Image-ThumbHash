@@ -9,9 +9,6 @@ return {
     MIN_PERL_VERSION   => '5.10.0',
     CONFIGURE_REQUIRES => {},
     BUILD_REQUIRES     => {},
-    TEST_REQUIRES      => {
-        'Test2::V0' => 0,
-    },
     PREREQ_PM          => {
         'strict'       => 0,
         'warnings'     => 0,
@@ -19,6 +16,11 @@ return {
         'Exporter'     => 5.57,
         'MIME::Base64' => 0,
         'List::Util'   => 0,
+    },
+    TEST_REQUIRES      => {
+        'FindBin'   => 0,
+        'Imager'    => 0,
+        'Test2::V0' => 0,
     },
     DEVELOP_REQUIRES   => {
         'Test::Pod' => 1.22,

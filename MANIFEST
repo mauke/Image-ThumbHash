@@ -4,5 +4,8 @@ Makefile.PL
 Makefile_PL_settings.plx
 MANIFEST			This list of files
 MANIFEST.SKIP
-t/compiles.t
+t/basic.t
+t/data/firefox.png
+t/data/pngified.txt
+t/data/sunrise.jpg
 xt/pod.t
