@@ -9,7 +9,9 @@ return {
     MIN_PERL_VERSION   => '5.10.0',
     CONFIGURE_REQUIRES => {},
     BUILD_REQUIRES     => {},
-    TEST_REQUIRES      => {},
+    TEST_REQUIRES      => {
+        'Test2::V0' => 0,
+    },
     PREREQ_PM          => {
         'strict'       => 0,
         'warnings'     => 0,
