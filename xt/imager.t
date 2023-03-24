@@ -16,10 +16,10 @@ for my $known (
         my $img = Imager->new;
         if (!$img->read(file => "$Bin/data/$file")) {
             my $error = $img->errstr;
-            if ($error =~ /^Error: format 'png' not supported/ && $ENV{GITHUB_ACTIONS}) {
-                skip "github is being stupid: Imager can't read png files";
+            if ($error =~ /^format 'png' not supported/ && $ENV{GITHUB_ACTIONS}) {
+                skip "github is being stupid: Imager can't read PNG files: $error";
             }
-            die $img->errstr;
+            die $error;
         }
         $img = $img->convert(preset => 'addalpha');
         $img->write(type => 'raw', data => \my $data) or die $img->errstr;
