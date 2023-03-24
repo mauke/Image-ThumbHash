@@ -61,9 +61,9 @@ and convert it to a PNG on the client side (using JavaScript). In either case,
 you end up with small placeholder images that load instantly while the original
 images can be loaded in asynchronously.
 
-This module exports the following functions on request.
-
 =head1 FUNCTIONS
+
+This module exports the following functions on request.
 
 =head2 rgba_to_thumb_hash
 
