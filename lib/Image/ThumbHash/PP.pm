@@ -167,7 +167,7 @@ sub rgba_to_png {
     _assert_w_h_rgba $width, $height, $rgba;
 
     my $row = $width * 4 + 1;
-    my $idat = 6 * $height * (5 + $row);
+    my $idat = 6 + $height * (5 + $row);
     my @bytes = (
         137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82, 0, 0,
         $width >> 8 & 0xff, $width & 0xff, 0, 0, $height >> 8 & 0xff, $height & 0xff, 8, 6, 0, 0, 0, 0, 0, 0, 0,
@@ -196,7 +196,7 @@ sub rgba_to_png {
     }
     push @bytes, (
         $b >> 8, $b & 0xff, $a >> 8, $a & 0xff, 0, 0, 0, 0,
-        0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130
+        0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 96, 130,
     );
     my @table = (
         0, 498536548, 997073096, 651767980, 1994146192, 1802195444, 1303535960,
