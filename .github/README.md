@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/mauke/Image-ThumbHash/badge.svg?branch=main)](https://coveralls.io/github/mauke/Image-ThumbHash?branch=main)
+
 # NAME
 
 Image::ThumbHash - A very compact representation of an image placeholder
