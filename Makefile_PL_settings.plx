@@ -19,11 +19,11 @@ return {
     },
     TEST_REQUIRES      => {
         'FindBin'   => 0,
-        'Imager'    => 0,
         'Test2::V0' => 0,
     },
     DEVELOP_REQUIRES   => {
         'Test::Pod' => 1.22,
+        'Imager'    => 0,
     },
 
     REPOSITORY => [ github => 'mauke' ],
