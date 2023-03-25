@@ -39,7 +39,7 @@ like
         my $expected_url = "data:image/png;base64,$expected_png_b64";
 
         my @average_color = thumb_hash_to_average_rgba $hash;
-        is \@average_color, [$xr, $xg, $xb, $xa];
+        is [map sprintf('%.6f',$_), @average_color], [$xr, $xg, $xb, $xa];
 
         my $approx_aspect_ratio = thumb_hash_to_approximate_aspect_ratio $hash;
         is $approx_aspect_ratio, $xratio;
