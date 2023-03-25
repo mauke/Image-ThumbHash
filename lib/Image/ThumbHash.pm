@@ -4,7 +4,7 @@ use warnings;
 
 use Exporter 5.57 qw(import);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 our $_BACKEND = 'PP';
 
